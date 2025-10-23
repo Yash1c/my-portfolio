@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Montoya | Serviços de Cibersegurança Profissionais</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script type="importmap">
+        {
+            "imports": {
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Guilherme Montoya Logo">
+                <h1>Guilherme Montoya</h1>
+            </div>
+            <nav id="navbar">
+                <a href="#home">Início</a>
+                <a href="#services">Serviços</a>
+                <a href="#pricing">Preços</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <button id="menu-toggle" class="menu-toggle">
+                &#9776;
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero section-padding">
+            <div class="container">
+                <p class="subtitle">Protegendo seu futuro digital.</p>
+                <h2>Soluções Profissionais em Cibersegurança</h2>
+                <p class="description">Guilherme Montoya oferece serviços de ponta em segurança ofensiva e defensiva para empresas de todos os portes. Garanta a integridade, confidencialidade e disponibilidade dos seus ativos digitais.</p>
+                <a href="#contact" class="btn primary-btn cta-btn">Solicite uma Consulta</a>
+                <div class="ctf-hint-container">
+                    <!-- Clue 1: A subtle hidden element referencing the CTF path -->
+                    <p class="ctf-hint" style="display:none;" data-clue="47-4f-54-4f-43-54-46">CTF Base Hint</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-padding services-section">
+            <div class="container">
+                <h3>Nossos Serviços</h3>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <i class="icon-shield"></i>
+                        <h4>Pentesting & Testes de Intrusão</h4>
+                        <p>Simulamos ataques reais para identificar vulnerabilidades antes que os criminosos o façam. Cobrimos aplicações web, redes e infraestrutura.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="icon-audit"></i>
+                        <h4>Auditoria de Código e Segurança</h4>
+                        <p>Revisão detalhada do código fonte e configurações para garantir que as melhores práticas de segurança sejam seguidas desde o desenvolvimento.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="icon-response"></i>
+                        <h4>Resposta a Incidentes</h4>
+                        <p>Suporte imediato para mitigar danos durante e após um ataque cibernético. Análise forense e recuperação de sistemas.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="icon-training"></i>
+                        <h4>Treinamento em Segurança</h4>
+                        <p>Capacitação para equipes de desenvolvimento e funcionários sobre os riscos cibernéticos atuais e como manter uma postura segura.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section-padding pricing-section">
+            <div class="container">
+                <h3>Preços Transparentes</h3>
+                <p class="intro-text">Oferecemos pacotes flexíveis adaptados às suas necessidades. Para projetos complexos, solicite um orçamento personalizado.</p>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card basic">
+                        <h4>Pacote Essencial</h4>
+                        <p class="price">R$ 4.500<span>/projeto</span></p>
+                        <ul>
+                            <li>Auditoria de Vulnerabilidade Externa</li>
+                            <li>Relatório de Risco Básico</li>
+                            <li>Reunião de Follow-up (1h)</li>
+                        </ul>
+                        <a href="#contact" class="btn secondary-btn">Contratar</a>
+                    </div>
+
+                    <div class="pricing-card professional featured">
+                        <h4>Pacote Profissional</h4>
+                        <p class="price">R$ 12.000<span>/projeto</span></p>
+                        <ul>
+                            <li>Pentesting Completo (Interno/Externo)</li>
+                            <li>Análise de Configuração</li>
+                            <li>Suporte Pós-Auditoria (30 dias)</li>
+                            <li>Treinamento Básico (Opcional)</li>
+                        </ul>
+                        <a href="#contact" class="btn primary-btn">Mais Popular</a>
+                    </div>
+
+                    <div class="pricing-card enterprise">
+                        <h4>Consultoria Empresarial</h4>
+                        <p class="price">Personalizado</p>
+                        <ul>
+                            <li>Resposta a Incidentes (Retainer)</li>
+                            <li>Serviços Gerenciados de Segurança (MSSP)</li>
+                            <li>Conformidade e Regulação (LGPD, ISO 27001)</li>
+                        </ul>
+                        <a href="#contact" class="btn secondary-btn">Solicitar Orçamento</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding contact-section">
+            <div class="container">
+                <h3>Fale Conosco</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecione um Serviço</option>
+                            <option value="pentesting">Pentesting</option>
+                            <option value="auditoria">Auditoria de Segurança</option>
+                            <option value="incidente">Resposta a Incidentes</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem / Detalhes do Projeto</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Enviar Mensagem</button>
+                    <p id="form-status" style="margin-top: 15px;"></p>
+                </form>
+            </div>
+        </section>
+        
+        <!-- CTF Modal/Overlay -->
+        <div id="ctf-overlay" class="ctf-overlay">
+            <div class="ctf-modal">
+                <h4>Guilherme Montoya CTF Challenge</h4>
+                <p>Bem-vindo, hacker ético. Você encontrou a entrada. Seu desafio é encontrar a bandeira (FLAG).</p>
+                <div class="challenge-box">
+                    <p id="challenge-question">Decifre o código de acesso para provar seu valor. O que está faltando?</p>
+                    <p class="code-snippet" data-hash="c2VjdXJpdHkgaXMgZnVu" id="challenge-snippet">c2VjdXJpdHkgaXMgZnVu</p>
+                    
+                    <div class="form-group">
+                        <input type="text" id="flag-input" placeholder="Insira a FLAG (formato GM{...})">
+                    </div>
+                    <button id="submit-flag" class="btn primary-btn">Verificar</button>
+                    <p id="ctf-result" class="result-message"></p>
+                </div>
+                <button id="close-ctf" class="btn secondary-btn">Fechar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Guilherme Montoya Cybersecurity. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
